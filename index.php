@@ -140,33 +140,33 @@ To see Flow Text in action, slowly resize your browser and watch the size of thi
 <li class="tab col s6"><h5><a href="#contacts">Contacts</a></h5></li>
 </ul>
 <div id="form" class="row">
-<form class="col s12" method="post" action="http://qantumthemes.xyz/sonikhtml/email_sender.php">
-<input type="hidden" name="antispam" value="x123">
+<form class="col s12" method="post" action="sendmail.php">
+<!-- <input type="hidden" name="antispam" value="x123"> -->
 <div class="row">
 <div class="input-field col s6">
-<input name="first_name" id="first_name" type="text" class="validate">
+<input name="first_name" id="first_name" type="text" class="validate" required>
 <label for="first_name">First Name</label>
 </div>
 <div class="input-field col s6">
-<input name="last_name" id="last_name" type="text" class="validate">
+<input name="last_name" id="last_name" type="text" class="validate" required>
 <label for="last_name">Last Name</label>
 </div>
 </div>
 <div class="row">
 <div class="input-field col s12">
-<input name="email" id="email" type="email" class="validate">
+<input name="email" id="email" type="email" class="validate" required>
 <label for="email">Email</label>
 </div>
 </div>
 <div class="row">
 <div class="input-field col s12">
-<textarea name="message" id="message" class="materialize-textarea" maxlength="300"></textarea>
+<textarea name="message" id="message" class="materialize-textarea" maxlength="300" required></textarea>
 <label for="message">Message</label>
 </div>
 </div>
 <div class="row">
 <div class="input-field col s12">
-<p><button class="btn waves-effect waves-light" type="submit" name="action">
+<p><button class="btn waves-effect waves-light" type="submit" name="submit">
 <span class="lnr lnr-rocket"></span> Submit
 </button></p>
 </div>
